@@ -65,9 +65,10 @@
               </article>
             {% endfor %}
 
-            <!-- {% for post in site.posts %}
+            <h2>ページ一覧</h2>
+            {% for post in site.posts %}
             <li><a href="{{ post.url }}">{{ post.title }}</a> : {{ post.date| date_to_string | date: "%Y-%m-%d" }}</li>
-            {% endfor %} -->
+            {% endfor %}
           </ul>
         </section>
       </div>
