@@ -1,0 +1,28 @@
+---
+layout: default
+title: タイトルは２つある
+description: metaタグで見れる
+---
+
+<body>
+  <section>
+    <h2>ページ一覧</h2>
+    <ul>
+      {% for tag in site.tags %}
+        <article>
+          <h3 id="tag_{{ tag[0] }}">{{ tag[0] }}</h1>
+          <ul>
+            {% for post in tag[1] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a> : {{ post.date| date_to_string | date: "%Y-%m-%d" }}</li>
+            {% endfor %}
+          </ul>
+        </article>
+      {% endfor %}
+
+      <h2>ページ一覧</h2>
+      {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> : {{ post.date| date_to_string | date: "%Y-%m-%d" }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+</body>
