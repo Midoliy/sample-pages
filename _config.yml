@@ -21,6 +21,7 @@
 # markdown: kramdown
 # highlighter: rouge
 
+lang: ja-JP
 title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
