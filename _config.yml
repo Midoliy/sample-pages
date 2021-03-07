@@ -24,7 +24,7 @@
 title: F# document in Japanese
 email: midorikawa@tech-leaves.com
 description: Hi, F#er's!!
-baseurl: "/sample-pages" # the subpath of your site, e.g. /blog
+baseurl: "https://midoliy.github.io/sample-pages" # the subpath of your site, e.g. /blog
 url: "https://midoliy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _midoliy_
 github_username: tatsuya-midorikawa
