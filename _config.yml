@@ -22,7 +22,7 @@
 # highlighter: rouge
 
 lang: ja-JP
-title: F# ドキュメント
+title: F# document in Japanese
 email: midorikawa@tech-leaves.com
 description: Hi, F#er's!!
 baseurl: "/sample-pages" # the subpath of your site, e.g. /blog
