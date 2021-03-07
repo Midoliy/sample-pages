@@ -54,7 +54,7 @@
         <section>
           <h2>ページ一覧</h2>
           <ul>
-            {% for article in site.articles %}
+            {% for article in site.posts %}
             <li><a href="{{ article.url }}">{{ article.title }}</a></li>
             {% endfor %}
           </ul>
