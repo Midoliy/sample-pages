@@ -13,7 +13,7 @@ description: Hi, F#er's!!
           <h2 id="tag_{{ tag[0] }}">{{ tag[0] }}</h1>
           <ul>
             {% for post in tag[1] %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a> : {{ post.date| date_to_string | date: "%Y-%m-%d" }}</li>
+            <li><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a> : {{ post.date| date_to_string | date: "%Y-%m-%d" }}</li>
             {% endfor %}
           </ul>
         </article>
@@ -22,7 +22,7 @@ description: Hi, F#er's!!
 
     <h1>ページ一覧</h2>
     {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a> : {{ post.date| date_to_string | date: "%Y-%m-%d" }}</li>
+    <li><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a> : {{ post.date| date_to_string | date: "%Y-%m-%d" }}</li>
     {% endfor %}
   </section>
 </body>
